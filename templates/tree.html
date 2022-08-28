@@ -1,0 +1,10 @@
+<ul>
+    {{ if lt .ID 0 }}
+    <li><a href="/">{{ .Name }}</a></li>
+    {{ else }}
+    <li><a href="/{{ .Kind }}/{{ .ID }}">{{ .Name }}</a></li>
+    {{ end }}
+    {{ range .Children }}
+    {{ template "tree.html" . }}
+    {{ end }}
+</ul>

@@ -1,0 +1,7 @@
+*
+!assets/
+!lib/
+!templates/
+!main.go
+!go.mod
+!go.sum
