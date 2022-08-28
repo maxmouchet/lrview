@@ -2,6 +2,7 @@
 
 [![Deploy Status][deploy-workflow-badge]][deploy-workflow-url]
 [![Docker Status][docker-workflow-badge]][docker-workflow-url]
+[![Release Status][release-workflow-badge]][release-workflow-url]
 
 lrview let you visualize a Lightroom catalog in the browser by exploiting the previews computed by Lightroom.  
 Its main use case is to display a Lightroom catalog stored on a NAS without a Lightroom installation.
@@ -46,3 +47,6 @@ go run main.go
 
 [docker-workflow-url]: https://github.com/maxmouchet/lrview/actions/workflows/docker.yml
 
+[release-workflow-badge]: https://img.shields.io/github/workflow/status/maxmouchet/lrview/Release?logo=github&label=release
+
+[release-workflow-url]: https://github.com/maxmouchet/lrview/actions/workflows/release.yml
