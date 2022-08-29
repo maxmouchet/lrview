@@ -19,8 +19,8 @@ Run lrview using one of the method below, then open your browser at [localhost:8
 docker run \
   -e LRVIEW_CATALOG_PATH=/MyCatalog.lrcat \
   -p 8080:8080 \
-  -v "$(pwd)/MyCatalog.lrcat":"/MyCatalog.lrcat" \
-  -v "$(pwd)/MyCatalog Previews.lrdata":"/MyCatalog Previews.lrdata" \
+  -v "$(pwd)/MyCatalog.lrcat:/MyCatalog.lrcat:ro" \
+  -v "$(pwd)/MyCatalog Previews.lrdata:/MyCatalog Previews.lrdata:ro" \
   ghcr.io/maxmouchet/lrview:main
 ```
 
